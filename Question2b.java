@@ -1,4 +1,15 @@
-/**
+/*
+Question 2 (b):
+You have two points in a 2D plane, represented by the arrays x_coords and y_coords. The goal is to find
+the lexicographically pair i.e. (i, j) of points (one from each array) that are closest to each other.
+Goal:
+Determine the lexicographically pair of points with the smallest distance and smallest distance calculated
+using | x_coords [i] - x_coords [j]| + | y_coords [i] - y_coords [j]|
+*/
+
+// Solution:
+
+/*
  * Algorithm Explanation:
  * ---------------------
  * The problem requires finding the closest pair of points based on Manhattan

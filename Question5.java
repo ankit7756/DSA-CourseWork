@@ -1,3 +1,17 @@
+/*
+Question 5:
+Optimizing a Network with Multiple Objectives
+Problem:
+Suppose you are hired as software developer for certain organization and you are tasked with creating a
+GUI application that helps network administrators design a network topology that is both cost-effective
+and efficient for data transmission. The application needs to visually represent servers and clients as
+nodes in a graph, with potential network connections between them, each having associated costs and
+bandwidths. The goal is to enable the user to find a network topology that minimizes both the total cost
+and the latency of data transmission.
+*/
+
+// Solution:
+
 /* Algorithm Explanation:
 * 
 * This application is a Java Swing-based GUI tool designed to help network administrators 
@@ -29,10 +43,8 @@
 
 import javax.swing.*; // Import Swing components for GUI
 import java.awt.*; // Import AWT components for graphics and layout
-import java.awt.event.*;
 import java.util.*; // Import utility classes (e.g., ArrayList, HashMap)
 import java.util.List; //  // Import List interface
-import java.util.stream.Collectors; // Import Collectors for stream operations
 
 // Main class for the Network Topology Application
 public class Question5 {

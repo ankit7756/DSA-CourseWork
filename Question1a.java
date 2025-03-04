@@ -1,4 +1,24 @@
-/**
+/*
+ Question 1 (a):
+You have a material with n temperature levels. You know that there exists a critical temperature f where
+0 <= f <= n such that the material will react or change its properties at temperatures higher than f but
+remain unchanged at or below f.
+Rules:
+You can measure the material's properties at any temperature level once.
+If the material reacts or changes its properties, you can no longer use it for further measurements.
+If the material remains unchanged, you can reuse it for further measurements.
+Goal:
+Determine the minimum number of measurements required to find the critical temperature.
+Input:
+k: The number of identical samples of the material.
+n: The number of temperature levels.
+Output:
+The minimum number of measurements required to find the critical temperature.
+ */
+
+// Solution:
+
+/*
  * Algorithm Explanation:
  * The problem is solved using Dynamic Programming approach where:
  * - We use a 2D DP table where dp[k][n] represents min measurements needed with k samples and n levels
@@ -102,30 +122,4 @@ public class Question1a {
  * - With 3 samples and 14 temperature levels:
  * - Can use optimal strategy to reduce measurements
  * - Maximum 4 measurements needed in worst case
- * 
- * Test Case 4:
- * Input: k = 1, n = 5
- * Output: 5
- * 
- * Explanation for k=1, n=5:
- * - With 1 sample and 5 temperature levels:
- * - Must use sequential testing strategy since we have only one sample
- * - First measurement at level 1
- * - If no change, test level 2
- * - If still no change, test level 3, and so on
- * - In worst case, need to test all 5 levels sequentially
- * - Total measurements needed: 5 (one for each temperature level)
- * 
- * Test Case 5:
- * Input: k = 2, n = 10
- * Output: 4
- * 
- * Explanation for k=2, n=10:
- * - With 2 samples and 10 temperature levels:
- * - First measurement optimally at level 4
- * - If material changes, use second sample to binary search levels 1-3
- * - If no change, use remaining sample to test remaining 6 levels optimally
- * - This divides the problem into smaller subproblems
- * - Maximum 4 measurements needed in worst case scenario
- * 
  */

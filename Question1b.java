@@ -1,4 +1,22 @@
-/**
+/*
+Question 1 (b):
+You have two sorted arrays of investment returns, returns1 and returns2, and a target number k. You
+want to find the kth lowest combined return that can be achieved by selecting one investment from each
+array.
+Rules:
+The arrays are sorted in ascending order.
+You can access any element in the arrays.
+Goal:
+Determine the kth lowest combined return that can be achieved.
+Input:
+returns1: The first sorted array of investment returns.
+returns2: The second sorted array of investment returns.
+k: The target index of the lowest combined return.
+Output:
+The kth lowest combined return that can be achieved
+*/
+
+/* 
  * Algorithm Explanation:
  * ---------------------
  * The problem can be solved using a Min-Heap (Priority Queue) approach:
@@ -12,7 +30,6 @@
  * Time Complexity: O(k * log(n)) where n is the length of returns1
  * Space Complexity: O(n) for the priority queue
  */
-
 
 import java.util.PriorityQueue;
 

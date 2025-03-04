@@ -1,4 +1,20 @@
 /*
+Question 6 (a):
+You are given a class NumberPrinter with three methods: printZero, printEven, and printOdd.
+These methods are designed to print the numbers 0, even numbers, and odd numbers, respectively.
+Task:
+Create a ThreadController class that coordinates three threads:
+ZeroThread: Calls printZero to print 0s.
+EvenThread: Calls printEven to print even numbers.
+OddThread: Calls printOdd to print odd numbers.
+These threads should work together to print the sequence "0102030405..." up to a specified number n.
+The output should be interleaved, ensuring that the numbers are printed in the correct order.
+
+*/
+
+// Solution:
+
+/*
 Algorithm Explanation:
 
 1. We need to print numbers in the sequence "0102030405..." up to a given number `n`.
