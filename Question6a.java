@@ -92,7 +92,7 @@ class ThreadController {
 // Main application class
 public class Question6a {
     public static void main(String[] args) {
-        int n = 10; // Define the upper limit of numbers
+        int n = 5; // Define the upper limit of numbers
         NumberPrinter printer = new NumberPrinter(); // Create a printer instance
         ThreadController controller = new ThreadController(n); // Create a controller instance
 
