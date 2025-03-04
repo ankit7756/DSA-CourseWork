@@ -40,7 +40,7 @@ Explanation:
 Note: Output table is sorted in descending order by hashtag_count and hashtag respectively
  */
 
-// Solution:
+// Solution :
 
 /*
     Algorithm Explanation:
