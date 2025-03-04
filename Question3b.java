@@ -1,8 +1,3 @@
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
-import javax.swing.Timer; // Import Swing's Timer class for game loop timing
 
 /**
  * Tetris Game Implementation
@@ -32,7 +27,14 @@ import javax.swing.Timer; // Import Swing's Timer class for game loop timing
  * - Stack<Block>: Tracks placed blocks
  * - 2D arrays: Represent game board and block colors
  */
-public class TetrisGame extends JFrame {
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+import javax.swing.Timer; // Import Swing's Timer class for game loop timing
+
+public class Question3b extends JFrame {
     // Constants defining game board dimensions and block size
     private static final int BOARD_WIDTH = 10; // Width of game board in blocks
     private static final int BOARD_HEIGHT = 20; // Height of game board in blocks
@@ -61,7 +63,7 @@ public class TetrisGame extends JFrame {
     /**
      * Constructor: Initializes game components and starts the game
      */
-    public TetrisGame() {
+    public Question3b() {
         // Initialize game UI and start game logic
         initComponents(); // Set up visual components
         startGame(); // Initialize game state
@@ -573,7 +575,7 @@ public class TetrisGame extends JFrame {
 
     public static void main(String[] args) {
         // Ensure UI is created on Event Dispatch Thread
-        SwingUtilities.invokeLater(() -> new TetrisGame().setVisible(true));
+        SwingUtilities.invokeLater(() -> new Question3b().setVisible(true));
     }
 }
 
