@@ -35,7 +35,7 @@ import java.util.List; //  // Import List interface
 import java.util.stream.Collectors; // Import Collectors for stream operations
 
 // Main class for the Network Topology Application
-public class NetworkTopologyApp {
+public class Question5 {
     private JFrame frame; // JFrame for the main application window
     private JPanel panel; // // Main panel to hold GUI component
     private JButton addNodeButton, addEdgeButton, calculateButton, optimizeButton; // Buttons for various functions
@@ -48,7 +48,7 @@ public class NetworkTopologyApp {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> { // Ensure GUI is created on the Event Dispatch Thread
             try {
-                NetworkTopologyApp window = new NetworkTopologyApp(); // Create an instance of the app
+                Question5 window = new Question5(); // Create an instance of the app
                 window.frame.setVisible(true); // Make the main frame visible
             } catch (Exception e) {
                 e.printStackTrace(); // Print stack trace if an exception occurs
@@ -57,7 +57,7 @@ public class NetworkTopologyApp {
     }
 
     // Constructor: Initializes the lists and sets up the GUI components
-    public NetworkTopologyApp() {
+    public Question5() {
         nodes = new ArrayList<>(); // Initialize the list for nodes
         edges = new ArrayList<>(); // Initialize the list for edges
         initialize(); // Call the method to set up the GUI components
